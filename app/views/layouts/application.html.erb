@@ -8,7 +8,54 @@
 </head>
 <body>
 
-<%= yield %>
+<%#= yield %>
+
+<nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed " data-toggle="collapse" data-target="#bs-navbar-collapse-1" >
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand">
+            <i class="fa fa-lg fa-circle">NG</i>
+
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <!--<button class ="btn btn-default">-->
+              <li><button><%= link_to "New NG", new_topic_path %></button></li>
+            <!--</button>-->
+
+
+          </ul>
+        </div>
+
+    </nav>
+    <!--<div id="color-band">-->
+
+    <!--</div>-->
+
+     <%= yield %>
+  </div>
+  </div>
+</body>
+
+ <div id="footer-prepend">
+ </div>
+ <div id="footer">
+          <div class="foot-wrap">
+             Powered by Lvl\U/p</br>
+
+                  <i class="fa fa-lg fa-twitter"></i>
+
+                  <i class="fa fa-lg fa-github"></i>
+          </div>
+
+  </div>
 
 </body>
 </html>
