@@ -1,3 +1,130 @@
 // Place all the styles related to the topics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+ @import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+ @import url(https://fonts.googleapis.com/css?family=Raleway:400,900);
+ 
+ body, td, p {
+  background-color: #fff;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  line-height: 30px;
+  
+  
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+ }
+.topic-title {
+ padding-top: 20px;
+ padding-bottom: 20px;
+ font-size: 36px;
+ 
+ font-family: 'Raleway', sans-sarif;
+ // font-family: 'Amatic SC', cursive;
+ h2{
+  font-weight: bold;
+ }
+}
+
+.topic-image{
+ border: 1px solid #eeefef;
+ 
+}
+
+.topic-description{
+ 
+ text-align: left;
+ display:block;
+ margin-left: auto;
+ margin-right: auto;
+ 
+ h3{
+  margin-left: 20px;
+ }
+ 
+}
+.votes-wrapper{
+ text-align: center;
+ display:block;
+ margin-left: auto;
+ margin-right: auto;
+}
+.votes{
+ margin-left: 20px;
+ margin-right: auto;
+ padding: 20px;
+ 
+}
+.delete{
+ 
+padding: 20px;
+ 
+}
+
+.fieldset {
+ display:block;
+}
+
+.show {
+ padding-top: 40px;
+  // margin: 0 auto;
+  max-width: 642px;
+  width: 100%;
+  // margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+.topics-wrapper {
+  padding-top: 40px;
+  // margin: 0 auto;
+  max-width: 642px;
+  width: 100%;
+  // margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  
+  p{
+   text-align: left;
+  }
+  
+}
+.description-wrapper{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.votes-wrapper {
+  // padding-top: 10px;
+  // padding-bottom: 20px;
+  // margin: 0 auto;
+  // width: 100%;
+  // margin: 10px;
+  // margin-left: auto;
+  // margin-right: auto;
+  // padding: 20px;
+  font-weight:700;
+  // display: inline;
+  // text-decoration: none;
+  text-align: left;
+  i {
+   color: #000;
+  }
+  
+    
+  
+}
+.votes-wrapper ul li{
+    display: inline;
+    // margin-right: 20px;
+    text-decoration: none;
+    // margin-left: auto;
+    // margin-right: auto;
+    text-align: left;
+}

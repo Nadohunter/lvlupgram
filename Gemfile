@@ -17,6 +17,7 @@ end
 gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'sass-rails','~> 5.0'
+gem 'font-awesome-sass', '~> 4.6.2'
 #gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
 #Amazon Web Services Cloud Storage
 gem 'aws-sdk', '~> 2.3'
