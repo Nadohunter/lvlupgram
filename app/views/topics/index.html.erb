@@ -25,12 +25,13 @@
                 <h2><%= topic.title %></h2>
                 <i class="fa fa-smile-o"></i>
             </div>
-           
-            <div class= "topic-image">
+           <div class = "center">
+              <div class= "topic-image">
                   <% if topic.image? %>
                     <%= link_to (image_tag topic.image.url(:medium), class:'img-responsive'), topic_path(topic) %>
                   <% end %>
-            </div>
+              </div>
+            </end>  
             
             <div class="topic-description">
                       <h3><%= topic.description %></h3>
@@ -57,5 +58,36 @@
     
 </div>
 
+<!--<h1>Listing Topics</h1>-->
 
+<!--<table>-->
+<!--  <thead>-->
+<!--    <tr>-->
+<!--      <th>Title</th>-->
+<!--      <th>Description</th>-->
+<!--      <th colspan="3"></th>-->
+<!--    </tr>-->
+<!--  </thead>-->
+
+<!--  <tbody>-->
+<!--    <% @topics.each do |topic| %>-->
+<!--      <tr>-->
+<!--        <td><%= topic.title %></td>-->
+<!--        <td><%= topic.description %></td>-->
+<!--          <% if topic.image? %>-->
+<!--        <td><%= link_to (image_tag topic.image.url(:medium), class:'img-responsive'), topic_path(topic) %></td>-->
+<!--          <% end %>-->
+<!--        <td><%= pluralize(topic.votes.count, "vote") %></td>-->
+<!--        <td><%= button_to '+1', upvote_topic_path(topic), method: :post %></td>-->
+<!--        <td><%= link_to 'Show', topic %></td>-->
+<!--        <td><%= link_to 'Edit', edit_topic_path(topic) %></td>-->
+<!--        <td><%= link_to 'Destroy', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+<!--      </tr>-->
+<!--    <% end %>-->
+<!--  </tbody>-->
+<!--</table>-->
+
+<!--<br>-->
+
+<!--<%= link_to 'New Topic', new_topic_path %>-->
 </center>
